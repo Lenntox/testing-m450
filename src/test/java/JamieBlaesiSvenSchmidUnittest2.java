@@ -1,5 +1,4 @@
-package org.example;
-
+import org.example.PasswordValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
