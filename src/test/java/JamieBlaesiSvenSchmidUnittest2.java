@@ -32,8 +32,8 @@ public class JamieBlaesiSvenSchmidUnittest2 {
     // Boundary tests for min/max length
     @Test
     void testIsPasswordValidBoundaries() {
-        assertTrue(passwordValidator.isPasswordValid("Abcde@1"), "Password with exactly 8 characters should pass.");
-        assertTrue(passwordValidator.isPasswordValid("AbcdefghijKlmno@1"), "Password with exactly 20 characters should pass.");
+        assertTrue(passwordValidator.isPasswordValid("Abcdef@1"), "Password with exactly 8 characters should pass.");
+        assertTrue(passwordValidator.isPasswordValid("AbcdefghijKlmnopq@1"), "Password with exactly 20 characters should pass.");
         assertFalse(passwordValidator.isPasswordValid("Abc@1"), "Password shorter than 8 characters should fail.");
         assertFalse(passwordValidator.isPasswordValid("AbcdefghijKlmnoPqrstuvwxyz@1"), "Password longer than 20 characters should fail.");
     }
